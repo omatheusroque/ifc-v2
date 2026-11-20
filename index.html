@@ -919,7 +919,7 @@ button,input,textarea,select{font-family:inherit;font-size:inherit;border:none;o
 }
 
 /* Fundo bege para integrar a imagem da piramide */
-.ifc-page .ifc-section--bege{background:linear-gradient(to bottom,#FEFBF4 0%,#F5F2EB 40%,#EDEAE1 70%,#E0DDD4 100%)}
+.ifc-page .ifc-section--bege{background:linear-gradient(to bottom,#FEFBF4 0%,#F7F4EC 20%,#EDEAE1 50%,#E5E2D8 70%,#DAD7CC 100%)}
 
 /* ============================================================
    PYRAMID (Jornada do Cliente)
@@ -932,8 +932,10 @@ button,input,textarea,select{font-family:inherit;font-size:inherit;border:none;o
 .ifc-page .ifc-pyramid svg,
 .ifc-page .ifc-pyramid img{
   width:100%;
-  max-width:960px;
+  max-width:1200px;
   height:auto;
+  -webkit-mask-image:linear-gradient(to right,transparent 0px,#000 8px,#000 calc(100% - 8px),transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0px,#000 8px,#000 calc(100% - 8px),transparent 100%);
 }
 
 /* ============================================================
@@ -1244,7 +1246,7 @@ button,input,textarea,select{font-family:inherit;font-size:inherit;border:none;o
     </div>
 
     <div class="ifc-pyramid">
-      <img src="files/2026-11-ajustes-felipe/piramide-jornada-ifc-2026-11-transparent.png" alt="Pirâmide da jornada IFC com 5 camadas de produtos">
+      <img src="files/2026-11-ajustes-felipe/piramide-jornada-ifc-2026-11-cropped.png" alt="Pirâmide da jornada IFC com 5 camadas de produtos">
     </div>
 
     <div style="text-align:center;margin-top:32px">
