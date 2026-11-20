@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Instituto Felipe Castro | Identidade, Essência e Transformação Real</title>
+<!-- FAVICON: atualize o href com a URL hospedada no GHL -->
+<link rel="icon" type="image/png" href="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a44683518d22f08d740062d.png">
+<link rel="apple-touch-icon" href="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a44683518d22f08d740062d.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   GHL FULL-BLEED
+   Forca as camadas do GoHighLevel a 100% de largura.
+   Ref: guia/GUIA_HTML_FullWidth_GoHighLevel.md
+   ============================================================ */
+:where(body *):has(.ifc-page){
+  max-width:100%!important;
+  width:100%!important;
+  padding-left:0!important;
+  padding-right:0!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:#2C2C2C;line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+ul,ol{list-style:none}
+button,input,textarea,select{font-family:inherit;font-size:inherit;border:none;outline:none}
+
+/* ============================================================
+   VARIABLES (Custom Properties)
+   ============================================================ */
+.ifc-page{
+  --color-primary:#1D51A3;
+  --color-primary-dark:#154080;
+  --color-primary-light:#2D63B5;
+  --color-dark:#111827;
+  --color-dark-light:#1E293B;
+  --color-gold:#C9A655;
+  --color-gray-100:#F7F7F7;
+  --color-gray-200:#EEEEEE;
+  --color-gray-400:#AAAAAA;
+  --color-gray-600:#6B6B6B;
+  --color-gray-900:#2C2C2C;
+  --color-white:#FFFFFF;
+  --font-heading:'Montserrat',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --max-width:1140px;
+  --gutter:22px;
+}
+
+/* ============================================================
+   LAYOUT UTILITIES
+   ============================================================ */
+.ifc-page .ifc-container{
+  width:100%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 var(--gutter);
+}
+
+.ifc-page .ifc-section{
+  width:100%;
+  padding:80px 0;
+}
+
+.ifc-page .ifc-section--dark{background:var(--color-dark);color:var(--color-white)}
+.ifc-page .ifc-section--light{background:var(--color-gray-100)}
+.ifc-page .ifc-section--primary{background:var(--color-primary);color:var(--color-white)}
+
+.ifc-page .ifc-heading{
+  font-family:var(--font-heading);
+  font-weight:700;
+  line-height:1.2;
+}
+.ifc-page .ifc-heading--xl{font-size:clamp(2rem,5vw,3.2rem)}
+.ifc-page .ifc-heading--lg{font-size:clamp(1.6rem,4vw,2.4rem)}
+.ifc-page .ifc-heading--md{font-size:clamp(1.2rem,3vw,1.6rem)}
+.ifc-page .ifc-heading--sm{font-size:clamp(1rem,2.5vw,1.2rem)}
+
+.ifc-page .ifc-text{font-size:1.05rem;color:var(--color-gray-600);max-width:680px}
+.ifc-page .ifc-text--light{color:rgba(255,255,255,.8)}
+.ifc-page .ifc-text--center{text-align:center;margin-left:auto;margin-right:auto}
+.ifc-page .ifc-text-center{text-align:center}
+
+.ifc-page .ifc-badge{
+  display:inline-block;
+  font-family:var(--font-heading);
+  font-size:.75rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--color-gold);
+  margin-bottom:12px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.ifc-page .ifc-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:var(--font-heading);
+  font-weight:600;
+  font-size:1rem;
+  padding:14px 32px;
+  border-radius:50px;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+.ifc-page .ifc-btn--primary{
+  background:var(--color-primary);
+  color:var(--color-white);
+}
+.ifc-page .ifc-btn--primary:hover{
+  background:var(--color-primary-dark);
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(29,81,163,.3);
+}
+.ifc-page .ifc-btn--outline{
+  background:transparent;
+  color:var(--color-white);
+  border:2px solid var(--color-white);
+}
+.ifc-page .ifc-btn--outline:hover{
+  background:var(--color-white);
+  color:var(--color-primary);
+}
+.ifc-page .ifc-btn--gold{
+  background:var(--color-gold);
+  color:var(--color-dark);
+}
+.ifc-page .ifc-btn--gold:hover{
+  background:#B8953E;
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(201,166,85,.3);
+}
+.ifc-page .ifc-btn--dark{
+  background:var(--color-dark);
+  color:var(--color-white);
+}
+.ifc-page .ifc-btn--dark:hover{
+  background:var(--color-dark-light);
+  transform:translateY(-2px);
+}
+
+/* ============================================================
+   TOPBAR
+   ============================================================ */
+.ifc-page .ifc-topbar{
+  background:var(--color-dark);
+  color:rgba(255,255,255,.7);
+  font-size:.8rem;
+  padding:8px 0;
+}
+.ifc-page .ifc-topbar .ifc-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.ifc-page .ifc-topbar a{color:var(--color-gold);transition:color .3s}
+.ifc-page .ifc-topbar a:hover{color:var(--color-white)}
+.ifc-page .ifc-topbar__social{display:flex;gap:16px;align-items:center}
+.ifc-page .ifc-topbar__social svg{width:16px;height:16px;fill:rgba(255,255,255,.7);transition:fill .3s}
+.ifc-page .ifc-topbar__social a:hover svg{fill:var(--color-gold)}
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+.ifc-page .ifc-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:var(--color-white);
+  box-shadow:0 2px 20px rgba(0,0,0,.08);
+}
+.ifc-page .ifc-header .ifc-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-top:12px;
+  padding-bottom:12px;
+}
+.ifc-page .ifc-logo{height:40px;width:auto;margin-right:12px}
+.ifc-page .ifc-nav{display:flex;align-items:center;gap:20px}
+.ifc-page .ifc-nav__link{
+  font-family:var(--font-heading);
+  font-size:.85rem;
+  font-weight:600;
+  white-space:nowrap;
+  color:var(--color-gray-900);
+  transition:color .3s;
+  position:relative;
+}
+.ifc-page .ifc-nav__link::after{
+  content:'';
+  position:absolute;
+  bottom:-4px;
+  left:0;
+  width:0;
+  height:2px;
+  background:var(--color-primary);
+  transition:width .3s;
+}
+.ifc-page .ifc-nav__link:hover{color:var(--color-primary)}
+.ifc-page .ifc-nav__link:hover::after{width:100%}
+.ifc-page .ifc-nav__cta{margin-left:8px}
+
+/* Dropdown */
+.ifc-page .ifc-dropdown{position:relative}
+.ifc-page .ifc-dropdown__menu{
+  position:absolute;
+  top:100%;
+  left:0;
+  background:var(--color-white);
+  box-shadow:0 12px 32px rgba(0,0,0,.12);
+  border-radius:8px;
+  min-width:200px;
+  padding:8px 0;
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(8px);
+  transition:all .3s;
+  z-index:100;
+}
+.ifc-page .ifc-dropdown:hover .ifc-dropdown__menu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+.ifc-page .ifc-dropdown__item{
+  display:block;
+  padding:10px 20px;
+  font-size:.85rem;
+  color:var(--color-gray-900);
+  transition:all .2s;
+}
+.ifc-page .ifc-dropdown__item:hover{
+  background:var(--color-gray-100);
+  color:var(--color-primary);
+}
+
+/* Hamburger */
+.ifc-page .ifc-hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
+.ifc-page .ifc-hamburger span{width:24px;height:2px;background:var(--color-gray-900);transition:all .3s}
+.ifc-page #ifc-menu-toggle{display:none}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.ifc-page .ifc-hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  background:linear-gradient(135deg,var(--color-dark) 0%,#0A1628 50%,var(--color-primary-dark) 100%);
+  overflow:hidden;
+}
+.ifc-page .ifc-hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse at 20% 50%,rgba(29,81,163,.15) 0%,transparent 60%),
+    radial-gradient(ellipse at 80% 20%,rgba(201,166,85,.08) 0%,transparent 50%);
+}
+.ifc-page .ifc-hero__content{color:var(--color-white);position:relative;z-index:1}
+.ifc-page .ifc-hero__title{
+  font-family:var(--font-heading);
+  font-size:clamp(2.2rem,5.5vw,3.6rem);
+  font-weight:800;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+.ifc-page .ifc-hero__title span{color:var(--color-gold)}
+.ifc-page .ifc-hero__sub{
+  font-size:1.15rem;
+  color:rgba(255,255,255,.75);
+  margin-bottom:32px;
+  max-width:500px;
+  line-height:1.7;
+}
+.ifc-page .ifc-hero__buttons{display:flex;gap:16px;flex-wrap:wrap}
+.ifc-page .ifc-hero__container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.ifc-page .ifc-hero__image{
+  position:relative;
+  z-index:1;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.4);
+  align-self:center;
+  max-width:420px;
+}
+.ifc-page .ifc-hero__image img{
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+/* Hero Form (mantido para compatibilidade) */
+.ifc-page .ifc-hero__form-card{
+  background:rgba(255,255,255,.06);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;
+  padding:40px 32px;
+}
+.ifc-page .ifc-hero__form-card h3{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:1.3rem;
+  color:var(--color-white);
+  margin-bottom:6px;
+}
+.ifc-page .ifc-hero__form-card p{
+  font-size:.9rem;
+  color:rgba(255,255,255,.6);
+  margin-bottom:24px;
+}
+.ifc-page .ifc-form__group{margin-bottom:16px}
+.ifc-page .ifc-form__input{
+  width:100%;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:8px;
+  padding:14px 16px;
+  color:var(--color-white);
+  font-size:.95rem;
+  transition:border-color .3s;
+}
+.ifc-page .ifc-form__input::placeholder{color:rgba(255,255,255,.4)}
+.ifc-page .ifc-form__input:focus{border-color:var(--color-gold)}
+.ifc-page .ifc-form__submit{
+  width:100%;
+  padding:16px;
+  border-radius:8px;
+  font-weight:700;
+  font-size:1rem;
+  cursor:pointer;
+  background:var(--color-gold);
+  color:var(--color-dark);
+  transition:all .3s;
+  font-family:var(--font-heading);
+}
+.ifc-page .ifc-form__submit:hover{
+  background:#B8953E;
+  transform:translateY(-1px);
+  box-shadow:0 6px 20px rgba(201,166,85,.3);
+}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.ifc-page .ifc-about__grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.ifc-page .ifc-about__content .ifc-heading{margin-bottom:20px}
+.ifc-page .ifc-about__content .ifc-text{margin-bottom:24px}
+.ifc-page .ifc-about__image{
+  position:relative;
+  border-radius:16px;
+  overflow:hidden;
+  background:linear-gradient(135deg,var(--color-gray-200),var(--color-gray-100));
+  align-self:center;
+  max-width:420px;
+}
+.ifc-page .ifc-about__image-placeholder{
+  font-family:var(--font-heading);
+  font-size:.85rem;
+  color:var(--color-gray-400);
+  text-align:center;
+  padding:20px;
+}
+.ifc-page .ifc-about__accent{
+  position:absolute;
+  top:-12px;
+  left:-12px;
+  width:80px;
+  height:80px;
+  border:3px solid var(--color-gold);
+  border-radius:12px;
+  z-index:-1;
+}
+
+/* ============================================================
+   DIFFERENTIALS / PILARES
+   ============================================================ */
+.ifc-page .ifc-diff__grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  margin-top:48px;
+}
+.ifc-page .ifc-diff__grid--3col{grid-template-columns:repeat(3,1fr)}
+.ifc-page .ifc-diff__card{
+  text-align:center;
+  padding:32px 20px;
+  border-radius:12px;
+  background:var(--color-white);
+  border:1px solid var(--color-gray-200);
+  transition:all .3s;
+}
+.ifc-page .ifc-diff__card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 32px rgba(0,0,0,.08);
+  border-color:var(--color-primary);
+}
+.ifc-page .ifc-diff__icon{
+  width:56px;
+  height:56px;
+  margin:0 auto 16px;
+  background:linear-gradient(135deg,var(--color-primary),var(--color-primary-light));
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.ifc-page .ifc-diff__icon svg{width:28px;height:28px;fill:var(--color-white)}
+.ifc-page .ifc-diff__card h4{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:1rem;
+  margin-bottom:8px;
+  color:var(--color-gray-900);
+}
+.ifc-page .ifc-diff__card p{
+  font-size:.88rem;
+  color:var(--color-gray-600);
+  line-height:1.5;
+}
+
+/* ============================================================
+   CTA BANNER (intermediario)
+   ============================================================ */
+.ifc-page .ifc-cta-banner{
+  position:relative;
+  padding:80px 0;
+  background:linear-gradient(135deg,var(--color-primary-dark),var(--color-primary));
+  color:var(--color-white);
+  text-align:center;
+  overflow:hidden;
+}
+.ifc-page .ifc-cta-banner::before{
+  content:'';
+  position:absolute;
+  top:-50%;
+  right:-20%;
+  width:500px;
+  height:500px;
+  background:radial-gradient(circle,rgba(201,166,85,.12),transparent 70%);
+  border-radius:50%;
+}
+.ifc-page .ifc-cta-banner .ifc-heading{margin-bottom:16px}
+.ifc-page .ifc-cta-banner .ifc-text{
+  color:rgba(255,255,255,.8);
+  margin-bottom:32px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* ============================================================
+   METHODOLOGY
+   ============================================================ */
+.ifc-page .ifc-method__grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.ifc-page .ifc-method__visual{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.ifc-page .ifc-method__step{
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  padding:24px;
+  border-radius:12px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  transition:all .3s;
+}
+.ifc-page .ifc-method__step:hover{
+  background:rgba(255,255,255,.08);
+  border-color:var(--color-gold);
+}
+.ifc-page .ifc-method__step-num{
+  flex-shrink:0;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background:var(--color-primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--font-heading);
+  font-weight:800;
+  font-size:1.1rem;
+  color:var(--color-white);
+}
+.ifc-page .ifc-method__step h4{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:1rem;
+  margin-bottom:4px;
+}
+.ifc-page .ifc-method__step p{
+  font-size:.88rem;
+  color:rgba(255,255,255,.6);
+  line-height:1.5;
+}
+
+/* ============================================================
+   STATS
+   ============================================================ */
+.ifc-page .ifc-stats__grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:32px;
+  margin-top:48px;
+}
+.ifc-page .ifc-stat{text-align:center}
+.ifc-page .ifc-stat__number{
+  font-family:var(--font-heading);
+  font-weight:800;
+  font-size:clamp(2.4rem,5vw,3.2rem);
+  color:var(--color-primary);
+  line-height:1;
+  margin-bottom:8px;
+}
+.ifc-page .ifc-section--dark .ifc-stat__number{color:var(--color-gold)}
+.ifc-page .ifc-stat__label{
+  font-size:.95rem;
+  color:var(--color-gray-600);
+}
+.ifc-page .ifc-section--dark .ifc-stat__label{color:rgba(255,255,255,.6)}
+.ifc-page .ifc-stat__divider{
+  width:40px;
+  height:3px;
+  background:var(--color-gold);
+  margin:12px auto 0;
+  border-radius:2px;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.ifc-page .ifc-testimonials__grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+  margin-top:48px;
+}
+.ifc-page .ifc-testimonial{
+  background:var(--color-white);
+  border-radius:16px;
+  padding:32px;
+  box-shadow:0 4px 20px rgba(0,0,0,.06);
+  border:1px solid var(--color-gray-200);
+  transition:all .3s;
+  position:relative;
+}
+.ifc-page .ifc-testimonial:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 32px rgba(0,0,0,.1);
+}
+.ifc-page .ifc-testimonial__quote{
+  font-size:2rem;
+  color:var(--color-primary);
+  font-family:Georgia,serif;
+  line-height:1;
+  margin-bottom:12px;
+  opacity:.3;
+}
+.ifc-page .ifc-testimonial__text{
+  font-size:.95rem;
+  color:var(--color-gray-600);
+  line-height:1.7;
+  margin-bottom:20px;
+  font-style:italic;
+}
+.ifc-page .ifc-testimonial__author{display:flex;align-items:center;gap:12px}
+.ifc-page .ifc-testimonial__avatar{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:var(--color-gray-200);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:.9rem;
+  color:var(--color-primary);
+}
+.ifc-page .ifc-testimonial__name{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:.9rem;
+  color:var(--color-gray-900);
+}
+.ifc-page .ifc-testimonial__role{
+  font-size:.8rem;
+  color:var(--color-gray-400);
+}
+
+/* ============================================================
+   CONTACT / CTA FINAL
+   ============================================================ */
+.ifc-page .ifc-contact__grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.ifc-page .ifc-contact__info{display:flex;flex-direction:column;gap:24px;margin-top:24px}
+.ifc-page .ifc-contact__item{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+.ifc-page .ifc-contact__icon{
+  flex-shrink:0;
+  width:48px;
+  height:48px;
+  border-radius:12px;
+  background:rgba(29,81,163,.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.ifc-page .ifc-contact__icon svg{width:22px;height:22px;fill:var(--color-primary)}
+.ifc-page .ifc-contact__item-text h4{
+  font-family:var(--font-heading);
+  font-weight:600;
+  font-size:.95rem;
+  color:var(--color-gray-900);
+  margin-bottom:2px;
+}
+.ifc-page .ifc-contact__item-text p{
+  font-size:.88rem;
+  color:var(--color-gray-600);
+}
+.ifc-page .ifc-contact__form{
+  background:var(--color-white);
+  border-radius:16px;
+  padding:40px;
+  box-shadow:0 8px 32px rgba(0,0,0,.08);
+  border:1px solid var(--color-gray-200);
+}
+.ifc-page .ifc-contact__form h3{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:1.3rem;
+  margin-bottom:4px;
+}
+.ifc-page .ifc-contact__form>p{
+  font-size:.9rem;
+  color:var(--color-gray-600);
+  margin-bottom:24px;
+}
+.ifc-page .ifc-form__input--light{
+  width:100%;
+  background:var(--color-gray-100);
+  border:1px solid var(--color-gray-200);
+  border-radius:8px;
+  padding:14px 16px;
+  color:var(--color-gray-900);
+  font-size:.95rem;
+  transition:border-color .3s;
+}
+.ifc-page .ifc-form__input--light::placeholder{color:var(--color-gray-400)}
+.ifc-page .ifc-form__input--light:focus{border-color:var(--color-primary);background:var(--color-white)}
+.ifc-page .ifc-form__textarea{
+  width:100%;
+  background:var(--color-gray-100);
+  border:1px solid var(--color-gray-200);
+  border-radius:8px;
+  padding:14px 16px;
+  color:var(--color-gray-900);
+  font-size:.95rem;
+  min-height:120px;
+  resize:vertical;
+  transition:border-color .3s;
+}
+.ifc-page .ifc-form__textarea::placeholder{color:var(--color-gray-400)}
+.ifc-page .ifc-form__textarea:focus{border-color:var(--color-primary);background:var(--color-white)}
+.ifc-page .ifc-form__submit--primary{
+  width:100%;
+  padding:16px;
+  border-radius:8px;
+  font-weight:700;
+  font-size:1rem;
+  cursor:pointer;
+  background:var(--color-primary);
+  color:var(--color-white);
+  transition:all .3s;
+  font-family:var(--font-heading);
+}
+.ifc-page .ifc-form__submit--primary:hover{
+  background:var(--color-primary-dark);
+  transform:translateY(-1px);
+  box-shadow:0 6px 20px rgba(29,81,163,.3);
+}
+
+/* ============================================================
+   SOCIAL SECTION
+   ============================================================ */
+.ifc-page .ifc-social__grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+  margin-top:40px;
+}
+.ifc-page .ifc-social-card{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:28px;
+  border-radius:12px;
+  background:var(--color-white);
+  border:1px solid var(--color-gray-200);
+  transition:all .3s;
+}
+.ifc-page .ifc-social-card:hover{
+  border-color:var(--color-primary);
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+}
+.ifc-page .ifc-social-card__icon{
+  flex-shrink:0;
+  width:56px;
+  height:56px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.ifc-page .ifc-social-card__icon--ig{background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.ifc-page .ifc-social-card__icon--yt{background:#FF0000}
+.ifc-page .ifc-social-card__icon svg{width:28px;height:28px;fill:var(--color-white)}
+.ifc-page .ifc-social-card__info h4{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:1rem;
+  margin-bottom:2px;
+}
+.ifc-page .ifc-social-card__info p{
+  font-size:.85rem;
+  color:var(--color-gray-600);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.ifc-page .ifc-footer{
+  background:var(--color-dark);
+  color:rgba(255,255,255,.7);
+  padding:60px 0 0;
+}
+.ifc-page .ifc-footer__grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:40px;
+  padding-bottom:40px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+.ifc-page .ifc-footer__brand p{
+  font-size:.9rem;
+  line-height:1.7;
+  margin-top:16px;
+  max-width:320px;
+}
+.ifc-page .ifc-footer__col h4{
+  font-family:var(--font-heading);
+  font-weight:700;
+  font-size:.9rem;
+  color:var(--color-white);
+  margin-bottom:16px;
+}
+.ifc-page .ifc-footer__col ul{display:flex;flex-direction:column;gap:10px}
+.ifc-page .ifc-footer__col a{
+  font-size:.88rem;
+  color:rgba(255,255,255,.6);
+  transition:color .3s;
+}
+.ifc-page .ifc-footer__col a:hover{color:var(--color-gold)}
+.ifc-page .ifc-footer__bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 0;
+  font-size:.8rem;
+  flex-wrap:wrap;
+  gap:12px;
+}
+.ifc-page .ifc-footer__logo{height:32px;width:auto;filter:brightness(0) invert(1);opacity:.7}
+
+/* ============================================================
+   WHATSAPP FAB
+   ============================================================ */
+.ifc-page .ifc-whatsapp{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  z-index:999;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 16px rgba(37,211,102,.4);
+  transition:all .3s;
+}
+.ifc-page .ifc-whatsapp:hover{
+  transform:scale(1.1);
+  box-shadow:0 6px 24px rgba(37,211,102,.5);
+}
+.ifc-page .ifc-whatsapp svg{width:30px;height:30px;fill:var(--color-white)}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media(max-width:992px){
+  .ifc-page .ifc-about__grid,
+  .ifc-page .ifc-method__grid,
+  .ifc-page .ifc-contact__grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+  .ifc-page .ifc-diff__grid{grid-template-columns:repeat(2,1fr)}
+  .ifc-page .ifc-diff__grid--3col{grid-template-columns:repeat(2,1fr)}
+  .ifc-page .ifc-stats__grid{grid-template-columns:repeat(2,1fr)}
+  .ifc-page .ifc-testimonials__grid{grid-template-columns:1fr 1fr}
+  .ifc-page .ifc-footer__grid{grid-template-columns:1fr 1fr}
+  .ifc-page .ifc-nav{
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    background:rgba(17,24,39,.96);
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:24px;
+    opacity:0;
+    visibility:hidden;
+    transition:all .3s;
+    z-index:999;
+  }
+  .ifc-page #ifc-menu-toggle:checked ~ .ifc-nav{
+    opacity:1;
+    visibility:visible;
+  }
+  .ifc-page .ifc-nav__link{color:var(--color-white);font-size:1.2rem}
+  .ifc-page .ifc-nav__link::after{display:none}
+  .ifc-page .ifc-hamburger{display:flex;z-index:1000;position:relative}
+  .ifc-page #ifc-menu-toggle:checked ~ .ifc-hamburger span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+  .ifc-page #ifc-menu-toggle:checked ~ .ifc-hamburger span:nth-child(2){opacity:0}
+  .ifc-page #ifc-menu-toggle:checked ~ .ifc-hamburger span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+  .ifc-page #ifc-menu-toggle:checked ~ .ifc-hamburger span{background:var(--color-white)}
+  .ifc-page .ifc-dropdown__menu{
+    position:static;
+    box-shadow:none;
+    background:transparent;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    padding:0;
+    min-width:0;
+  }
+  .ifc-page .ifc-dropdown__item{color:rgba(255,255,255,.6);padding:6px 0;font-size:.95rem}
+  .ifc-page .ifc-dropdown__item:hover{background:transparent;color:var(--color-gold)}
+  .ifc-page .ifc-hero{min-height:auto;padding:100px 0 60px}
+  .ifc-page .ifc-hero__container{grid-template-columns:1fr;gap:40px}
+  .ifc-page .ifc-hero__image{max-width:400px;margin:0 auto}
+  .ifc-page .ifc-hero__title{font-size:clamp(1.8rem,6vw,2.8rem)}
+}
+
+@media(max-width:600px){
+  .ifc-page .ifc-section{padding:60px 0}
+  .ifc-page .ifc-diff__grid{grid-template-columns:1fr}
+  .ifc-page .ifc-diff__grid--3col{grid-template-columns:1fr}
+  .ifc-page .ifc-stats__grid{grid-template-columns:1fr 1fr}
+  .ifc-page .ifc-testimonials__grid{grid-template-columns:1fr}
+  .ifc-page .ifc-social__grid{grid-template-columns:1fr}
+  .ifc-page .ifc-footer__grid{grid-template-columns:1fr}
+  .ifc-page .ifc-footer__bottom{flex-direction:column;text-align:center}
+  .ifc-page .ifc-hero__buttons{flex-direction:column;align-items:stretch}
+  .ifc-page .ifc-hero__form-card{padding:28px 20px}
+  .ifc-page .ifc-contact__form{padding:28px 20px}
+  .ifc-page .ifc-topbar .ifc-container{justify-content:center;text-align:center}
+  .ifc-page .ifc-topbar__social{display:none}
+}
+
+/* Fundo bege para integrar a imagem da piramide */
+.ifc-page .ifc-section--bege{background:#FEFBF4}
+
+/* ============================================================
+   PYRAMID (Jornada do Cliente)
+   ============================================================ */
+.ifc-page .ifc-pyramid{
+  margin-top:48px;
+  display:flex;
+  justify-content:center;
+}
+.ifc-page .ifc-pyramid svg,
+.ifc-page .ifc-pyramid img{
+  width:100%;
+  max-width:960px;
+  height:auto;
+  border-radius:12px;
+  box-shadow:0 4px 24px rgba(0,0,0,.06);
+}
+
+/* ============================================================
+   PRODUCT LOGO (Ecossistema)
+   ============================================================ */
+.ifc-page .ifc-product-logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:72px;
+  margin-bottom:20px;
+  padding:0 12px;
+  border:1px dashed var(--color-gray-400);
+  border-radius:8px;
+  background:var(--color-gray-100);
+  color:var(--color-gray-400);
+  font-family:var(--font-heading);
+  font-size:.7rem;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  text-align:center;
+  line-height:1.3;
+}
+.ifc-page .ifc-product-logo img{
+  max-height:64px;
+  max-width:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
+
+/* ============================================================
+   ECOSSISTEMA & IN COMPANY GRIDS — Mobile-first
+   ============================================================ */
+.ifc-page .ifc-eco__grid{
+  grid-template-columns:1fr;
+}
+.ifc-page .ifc-incompany__grid{
+  grid-template-columns:1fr;
+}
+@media(min-width:601px){
+  .ifc-page .ifc-eco__grid{grid-template-columns:repeat(2,1fr)}
+  .ifc-page .ifc-incompany__grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(min-width:993px){
+  .ifc-page .ifc-eco__grid{grid-template-columns:repeat(3,1fr)}
+  .ifc-page .ifc-incompany__grid{grid-template-columns:repeat(3,1fr)}
+}
+
+/* Ecossistema cards — impede overflow */
+.ifc-page .ifc-eco__grid .ifc-diff__card,
+.ifc-page .ifc-incompany__grid .ifc-diff__card{
+  min-width:0;
+  overflow:hidden;
+  word-break:break-word;
+}
+.ifc-page .ifc-eco__grid .ifc-diff__card p,
+.ifc-page .ifc-incompany__grid .ifc-diff__card p{
+  overflow-wrap:break-word;
+}
+
+</style>
+</head>
+
+<body>
+<div class="ifc-page">
+
+<!-- ========== TOPBAR ========== -->
+<div class="ifc-topbar">
+  <div class="ifc-container">
+    <span>Araraquara &middot; SP &nbsp;|&nbsp; <a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener">WhatsApp</a> &nbsp;|&nbsp; <a href="mailto:contato@institutofelipecastro.com.br">contato@institutofelipecastro.com.br</a></span>
+    <div class="ifc-topbar__social">
+      <a href="https://www.instagram.com/eusou.felipecastro/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@eusou.felipecastro" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ========== HEADER ========== -->
+<header class="ifc-header">
+  <div class="ifc-container">
+    <a href="#inicio" class="ifc-logo-link">
+      <img src="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a44683545073744c01569a2.png" alt="Instituto Felipe Castro" class="ifc-logo">
+    </a>
+
+    <input type="checkbox" id="ifc-menu-toggle" class="ifc-menu-toggle">
+    <label for="ifc-menu-toggle" class="ifc-hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="ifc-nav">
+      <a href="#inicio" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Início</a>
+      <a href="#sobre" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Felipe Castro</a>
+      <a href="#pilares" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Pilares</a>
+      <a href="#imersao" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Imersão</a>
+      <a href="#jornada" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Jornada</a>
+      <a href="#ecossistema" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Ecossistema</a>
+      <a href="#incompany" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">In Company</a>
+      <a href="#contato" class="ifc-nav__link" onclick="document.getElementById('ifc-menu-toggle').checked=false">Contato</a>
+      <a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener" class="ifc-btn ifc-btn--primary ifc-nav__cta">Fale Conosco</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="ifc-hero" id="inicio">
+  <div class="ifc-container ifc-hero__container">
+    <div class="ifc-hero__content">
+      <span class="ifc-badge">Desenvolvimento de empresários e lideranças</span>
+      <h1 class="ifc-hero__title">O negócio cresce quando o <span>empresário cresce.</span></h1>
+      <p class="ifc-hero__sub">Você construiu uma empresa que funciona. Mas ela ainda precisa demais de você. A próxima fase da empresa exige uma próxima versão do empresário, e das pessoas que lideram ao lado dele.</p>
+      <div class="ifc-hero__buttons">
+        <a href="#metodologia" class="ifc-btn ifc-btn--gold">Conhecer o Método Initium</a>
+        <a href="#contato" class="ifc-btn ifc-btn--outline">Falar com a equipe IFC</a>
+      </div>
+    </div>
+    <div class="ifc-hero__image">
+      <img src="https://files.leadconnectorhq.com/file/6b005d48d40dd2061743320f/felipe-hero.webp" alt="Felipe Castro">
+    </div>
+  </div>
+</section>
+
+<!-- ========== SOBRE ========== -->
+<section class="ifc-section" id="sobre">
+  <div class="ifc-container ifc-about__grid">
+
+    <div class="ifc-about__content">
+      <span class="ifc-badge">Quem conduz</span>
+      <h2 class="ifc-heading ifc-heading--lg">Felipe Castro</h2>
+      <p class="ifc-text" style="font-weight:600;color:var(--color-gray-900);margin-bottom:16px">Master em Programação Neurolinguística, Treinador Comportamental, Analista DISC e Mentor de Empresários. Fundador do Instituto Felipe Castro e criador do <em>Método Initium</em>.</p>
+      <p class="ifc-text">&ldquo;Eu desenvolvo empresários. Meu trabalho é melhorar a pessoa por trás da empresa para que ela lidere melhor, venda mais e faça o negócio crescer sem precisar carregar tudo nas costas.&rdquo;</p>
+      <p class="ifc-text" style="font-size:.9rem;color:var(--color-gray-400);margin-top:16px">Fundador do Instituto Felipe Castro &middot; Master em PNL &middot; Analista DISC &middot; Behavioral Trainer &middot; Autor de <em>Você Não Nasceu Para Sofrer</em></p>
+      <p class="ifc-text" style="font-family:var(--font-heading);font-style:italic;color:var(--color-primary);font-size:1.15rem;margin-top:20px"><strong>&ldquo;Eu não te ensino PNL. Eu uso a PNL para te devolver para você.&rdquo;</strong></p>
+      <a href="#ecossistema" class="ifc-btn ifc-btn--primary" style="margin-top:8px">Conhecer o ecossistema IFC</a>
+    </div>
+
+    <div class="ifc-about__image">
+      <div class="ifc-about__accent"></div>
+      <img src="https://files.leadconnectorhq.com/file/6b005d488368d0ae48388b01/felipe-sobre.webp" alt="Felipe Castro" style="width:100%;height:auto;display:block;border-radius:16px">
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== 3 PILARES DO IFC ========== -->
+<section class="ifc-section ifc-section--light" id="pilares">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Os 3 Pilares do IFC</span>
+      <h2 class="ifc-heading ifc-heading--lg">Empresa forte. <span style="color:var(--color-gold)">Empresário inteiro.</span></h2>
+      <p class="ifc-text ifc-text--center" style="margin-top:12px">Trabalhamos a mentalidade do dono e da sua liderança em três frentes que se reforçam. Quando a pessoa muda, a forma de liderar muda. Quando a liderança muda, o negócio responde.</p>
+    </div>
+
+    <div class="ifc-diff__grid ifc-diff__grid--3col">
+
+      <div class="ifc-diff__card">
+        <div class="ifc-diff__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h4>Posicionamento Congruente</h4>
+        <p>Clareza, identidade, crenças, inteligência emocional, tomada de decisão e capacidade de sustentar o crescimento sob pressão.</p>
+      </div>
+
+      <div class="ifc-diff__card">
+        <div class="ifc-diff__icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h4>Mentalidade Estratégica</h4>
+        <p>Visão de longo prazo, foco no essencial, priorização, disciplina de execução e capacidade de tomar decisões melhores, mais rápidas e com menos ruído.</p>
+      </div>
+
+      <div class="ifc-diff__card">
+        <div class="ifc-diff__icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h4>Execução e Alta Performance</h4>
+        <p>Produtividade, gestão do tempo, criação de hábitos, performance consistente, delegação e construção de equipes de alta entrega para gerar resultados com previsibilidade.</p>
+      </div>
+
+    </div>
+
+    <p class="ifc-text ifc-text--center" style="margin-top:40px;font-family:var(--font-heading);font-style:italic;color:var(--color-primary);font-size:1.1rem"><strong>&ldquo;A empresa deve servir à construção de uma vida próspera, e não consumir a vida de quem a construiu.&rdquo;</strong></p>
+  </div>
+</section>
+
+<!-- ========== IMERSÃO MÉTODO INITIUM - PRODUTO ÂNCORA ========== -->
+<section class="ifc-section ifc-section--dark" id="imersao">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Imersão Presencial</span>
+      <h2 class="ifc-heading ifc-heading--lg" style="color:var(--color-white)">Imersão Método Initium</h2>
+      <p class="ifc-text ifc-text--light ifc-text--center" style="margin-top:12px;max-width:760px">Dois dias com Felipe Castro para mergulhar na mente humana e encontrar seu caminho de crescimento. <strong style="color:var(--color-gold)">Gestão emocional</strong>, <strong style="color:var(--color-gold)">PNL</strong>, <strong style="color:var(--color-gold)">Comunicação</strong> e <strong style="color:var(--color-gold)">Posicionamento</strong> orquestrados em uma única experiência.</p>
+    </div>
+
+    <div class="ifc-stats__grid" style="margin-top:56px;grid-template-columns:repeat(2,1fr);gap:40px 80px;max-width:680px;margin-left:auto;margin-right:auto">
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number" style="color:var(--color-gold)">01</div>
+        <div class="ifc-stat__label" style="color:rgba(255,255,255,.85);font-weight:600">Diagnóstico de Identidade</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number" style="color:var(--color-gold)">02</div>
+        <div class="ifc-stat__label" style="color:rgba(255,255,255,.85);font-weight:600">Reprogramação Profunda</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number" style="color:var(--color-gold)">03</div>
+        <div class="ifc-stat__label" style="color:rgba(255,255,255,.85);font-weight:600">Construção da Nova Identidade</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number" style="color:var(--color-gold)">04</div>
+        <div class="ifc-stat__label" style="color:rgba(255,255,255,.85);font-weight:600">Sustentação Prática</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+    </div>
+
+    <p class="ifc-text ifc-text--light ifc-text--center" style="margin-top:48px;font-family:var(--font-heading);font-size:1.1rem;font-style:italic;color:rgba(255,255,255,.9);max-width:720px">&ldquo;Não é palestra. É um sistema de transformação.&rdquo;</p>
+
+    <div style="text-align:center;margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+      <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20a%20Imers%C3%A3o%20M%C3%A9todo%20Initium" target="_blank" rel="noopener" class="ifc-btn ifc-btn--gold">Conhecer a Imersão Método Initium</a>
+      <a href="#contato" class="ifc-btn ifc-btn--outline">Garantir minha vaga</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA INTERMEDIARIO ========== -->
+<div class="ifc-cta-banner">
+  <div class="ifc-container">
+    <h2 class="ifc-heading ifc-heading--lg">A próxima fase da empresa exige uma próxima versão do empresário.<br><span style="color:var(--color-gold)">uma verdadeira atualização da sua identidade.</span></h2>
+    <p class="ifc-text ifc-text--center">Não é uma mudança de agenda. É uma mudança de identidade. Comece a conversa.</p>
+    <a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener" class="ifc-btn ifc-btn--gold">Falar agora pelo WhatsApp</a>
+  </div>
+</div>
+
+<!-- ========== METODO INITIUM ========== -->
+<section class="ifc-section ifc-section--dark" id="metodologia">
+  <div class="ifc-container ifc-method__grid">
+
+    <div>
+      <span class="ifc-badge">Método Initium</span>
+      <h2 class="ifc-heading ifc-heading--lg" style="margin-bottom:16px;color:var(--color-white)">Não é palestra.<br><span style="color:var(--color-gold)">É um sistema de transformação.</span></h2>
+      <p class="ifc-text ifc-text--light" style="margin-bottom:24px">Quatro pilares integrados: <strong style="color:var(--color-gold)">Programação Neurolinguística, Perfil Comportamental, Inteligência Emocional e Espiritualidade Aplicada</strong>. Nenhum funciona sozinho: a integração é o método.</p>
+      <p class="ifc-text ifc-text--light" style="margin-bottom:32px;font-family:var(--font-heading);font-style:italic;color:var(--color-gold)">&ldquo;Você não nasceu para sofrer.&rdquo;</p>
+      <a href="#contato" class="ifc-btn ifc-btn--gold">Quero conhecer o método</a>
+    </div>
+
+    <div class="ifc-method__visual">
+
+      <div class="ifc-method__step">
+        <div class="ifc-method__step-num">1</div>
+        <div>
+          <h4>Diagnóstico de Identidade</h4>
+          <p>Perfil comportamental, padrões inconscientes e sistema relacional.</p>
+        </div>
+      </div>
+
+      <div class="ifc-method__step">
+        <div class="ifc-method__step-num">2</div>
+        <div>
+          <h4>Reprogramação Profunda</h4>
+          <p>PNL aplicada a crenças, bloqueios e automatismos.</p>
+        </div>
+      </div>
+
+      <div class="ifc-method__step">
+        <div class="ifc-method__step-num">3</div>
+        <div>
+          <h4>Construção da Nova Identidade</h4>
+          <p>Instalação da identidade capaz de sustentar o próximo nível.</p>
+        </div>
+      </div>
+
+      <div class="ifc-method__step">
+        <div class="ifc-method__step-num">4</div>
+        <div>
+          <h4>Sustentação Prática</h4>
+          <p>Hábitos, decisões e rituais que mantêm a mudança no mundo real.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== PIRAMIDE / JORNADA ESTRUTURADA ========== -->
+<section class="ifc-section ifc-section--bege" id="jornada">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Jornada do Cliente IFC</span>
+      <h2 class="ifc-heading ifc-heading--lg">Cinco camadas. Uma única trajetória de transformação.</h2>
+      <p class="ifc-text ifc-text--center" style="margin-top:12px;max-width:720px">Cada produto do IFC ocupa um lugar específico na sua jornada. Da primeira porta de entrada ao trabalho corporativo de alto nível, tudo se conecta ao Método Initium.</p>
+    </div>
+
+    <div class="ifc-pyramid">
+      <img src="https://files.leadconnectorhq.com/file/6b005d4bd40dd2061743326c/piramide-jornada-ifc-2026-11.png" alt="Pirâmide da jornada IFC com 5 camadas de produtos">
+    </div>
+
+    <div style="text-align:center;margin-top:32px">
+      <p class="ifc-text ifc-text--center" style="margin-bottom:20px">Cada camada se sustenta na anterior. Você pode entrar por qualquer porta, mas o trabalho completo é a jornada inteira.</p>
+      <a href="#contato" class="ifc-btn ifc-btn--primary">Falar com um especialista da jornada</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ECOSSISTEMA IFC ========== -->
+<section class="ifc-section ifc-section--light" id="ecossistema">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Ecossistema IFC</span>
+      <h2 class="ifc-heading ifc-heading--lg">Um ecossistema. <span style="color:var(--color-primary)">Múltiplas portas de entrada.</span></h2>
+      <p class="ifc-text ifc-text--center" style="margin-top:12px;max-width:680px">Todas as portas levam ao mesmo lugar: um empresário mais preparado para sustentar o tamanho da empresa que deseja construir, e lideranças prontas para crescer com ele.</p>
+    </div>
+
+    <div class="ifc-diff__grid ifc-eco__grid" style="margin-top:48px">
+
+      <div class="ifc-diff__card" style="text-align:left;padding:32px 28px">
+        <div class="ifc-product-logo"><img src="https://files.leadconnectorhq.com/file/6b005d48d50d9db7961e0535/logo-metodo-initium-dourada.png" alt="Método Initium"></div>
+        <span class="ifc-badge" style="margin-bottom:8px">Imersão Presencial</span>
+        <h4 style="font-size:1.15rem;margin-bottom:12px">Imersão Método Initium</h4>
+        <p style="margin-bottom:16px">Dois dias com Felipe Castro para mergulhar na mente humana e encontrar seu caminho de crescimento. Gestão emocional, PNL, Comunicação e Posicionamento orquestrados em uma única experiência.</p>
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20a%20Imers%C3%A3o%20M%C3%A9todo%20Initium" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600;font-size:.9rem">Saber mais &rarr;</a>
+      </div>
+
+      <div class="ifc-diff__card" style="text-align:left;padding:32px 28px">
+        <div class="ifc-product-logo"><img src="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a4468350f3445329fd69f86.png" alt="Mentoria Initium"></div>
+        <span class="ifc-badge" style="margin-bottom:8px">Mentoria Individual</span>
+        <h4 style="font-size:1.15rem;margin-bottom:12px">Mentoria Initium</h4>
+        <p style="margin-bottom:16px">Acompanhamento individual, profundo e sob medida, direto com Felipe Castro. A mentoria exclusiva para empresários e profissionais liberais que buscam seu novo posicionamento.</p>
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20a%20Mentoria%20Initium" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600;font-size:.9rem">Saber mais &rarr;</a>
+      </div>
+
+      <div class="ifc-diff__card" style="text-align:left;padding:32px 28px">
+        <div class="ifc-product-logo"><img src="https://files.leadconnectorhq.com/file/6b005d488368d0ae48388af5/logo-pnl-practitioner-dourada.png" alt="Formação Practitioner em PNL"></div>
+        <span class="ifc-badge" style="margin-bottom:8px">Formação</span>
+        <h4 style="font-size:1.15rem;margin-bottom:12px">Formação Practitioner em PNL</h4>
+        <p style="margin-bottom:16px">Domínio das ferramentas que reescrevem padrões de comportamento, para liderar a si mesmo antes de liderar os outros.</p>
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20a%20Formacao%20Practitioner%20PNL" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600;font-size:.9rem">Saber mais &rarr;</a>
+      </div>
+
+      <div class="ifc-diff__card" style="text-align:left;padding:32px 28px">
+        <div class="ifc-product-logo"><img src="https://files.leadconnectorhq.com/file/6b005d488b5100b36a28613a/logo-mpnl-master-dourada.png" alt="Formação Master em PNL"></div>
+        <span class="ifc-badge" style="margin-bottom:8px">Formação</span>
+        <h4 style="font-size:1.15rem;margin-bottom:12px">Formação Master em PNL</h4>
+        <p style="margin-bottom:16px">Aprofundamento técnico e estratégico para aplicar a PNL em liderança, negociação e desenvolvimento de pessoas.</p>
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20a%20Formacao%20Master%20PNL" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600;font-size:.9rem">Saber mais &rarr;</a>
+      </div>
+
+      <div class="ifc-diff__card" style="text-align:left;padding:32px 28px">
+        <div class="ifc-product-logo"><img src="https://files.leadconnectorhq.com/file/6b005d482c68ebcf462f9ad9/logo-vlt-dourada.png" alt="VLT - Vendas e Liderança Training"></div>
+        <span class="ifc-badge" style="margin-bottom:8px">Treinamento</span>
+        <h4 style="font-size:1.15rem;margin-bottom:12px">VLT &middot; Vendas &amp; Liderança Training</h4>
+        <p style="margin-bottom:16px">Vender com método e liderar com intenção: processo comercial, SPIN, objeções, delegação, DISC e formação de equipe para construir novos resultados.</p>
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20o%20VLT" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600;font-size:.9rem">Saber mais &rarr;</a>
+      </div>
+
+      <div class="ifc-diff__card" style="text-align:left;padding:32px 28px">
+        <div class="ifc-product-logo"><img src="https://files.leadconnectorhq.com/file/6b005d4bd40dd20617433260/logo-vcr-voicer-dourada.png" alt="VCR Voicer"></div>
+        <span class="ifc-badge" style="margin-bottom:8px">Treinamento</span>
+        <h4 style="font-size:1.15rem;margin-bottom:12px">VCR &middot; Voicer</h4>
+        <p style="margin-bottom:16px">Comunicação e storytelling para o empresário e seus líderes: histórias que conectam, convencem e engajam times e clientes.</p>
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20saber%20sobre%20o%20Voicer" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600;font-size:.9rem">Saber mais &rarr;</a>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:48px;padding:32px;background:var(--color-white);border-radius:16px;border:1px solid var(--color-gray-200)">
+      <h3 style="font-family:var(--font-heading);font-weight:700;font-size:1.2rem;margin-bottom:8px">Conteúdo gratuito para começar</h3>
+      <p style="color:var(--color-gray-600);margin-bottom:20px">Livro <strong>&ldquo;Você não nasceu para sofrer&rdquo;</strong> &middot; Initium Podcast &middot; Conteúdo diário no @eusou.felipecastro</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="https://www.instagram.com/eusou.felipecastro/" target="_blank" rel="noopener" class="ifc-btn ifc-btn--dark">Seguir no Instagram</a>
+        <a href="https://www.youtube.com/@eusou.felipecastro" target="_blank" rel="noopener" class="ifc-btn ifc-btn--primary">Ver no YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== IFC IN COMPANY ========== -->
+<section class="ifc-section ifc-section--dark" id="incompany">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">IFC In Company</span>
+      <h2 class="ifc-heading ifc-heading--lg" style="color:var(--color-white)">Sua empresa não <span style="color:var(--color-gold)">cresce</span> além da mentalidade <span style="color:var(--color-gold)">de quem a lidera.</span></h2>
+      <p class="ifc-text ifc-text--light ifc-text--center" style="margin-top:12px;max-width:760px">Levamos a mesma transformação para dentro da empresa. Uma linguagem comum de decisão, responsabilidade e performance: do dono ao time.</p>
+    </div>
+
+    <div class="ifc-diff__grid ifc-incompany__grid" style="margin-top:56px">
+
+      <div class="ifc-diff__card" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:left;padding:32px 28px">
+        <div class="ifc-diff__icon" style="margin:0 0 16px">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h4 style="color:var(--color-white);font-size:1.15rem;margin-bottom:12px">Desenvolvimento de Lideranças</h4>
+        <p style="color:rgba(255,255,255,.75)">Programas sob medida de mentalidade, inteligência emocional, liderança e vendas para gestores e equipes.</p>
+      </div>
+
+      <div class="ifc-diff__card" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:left;padding:32px 28px">
+        <div class="ifc-diff__icon" style="margin:0 0 16px">
+          <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+        </div>
+        <h4 style="color:var(--color-white);font-size:1.15rem;margin-bottom:12px">Diagnóstico &amp; Consultoria</h4>
+        <p style="color:rgba(255,255,255,.75)">Mapeamento de perfis comportamentais (DISC), cultura, pontos cegos da liderança e gargalos que prendem a empresa ao dono.</p>
+      </div>
+
+      <div class="ifc-diff__card" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:left;padding:32px 28px">
+        <div class="ifc-diff__icon" style="margin:0 0 16px">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h4 style="color:var(--color-white);font-size:1.15rem;margin-bottom:12px">Palestras &amp; Convenções</h4>
+        <p style="color:rgba(255,255,255,.75)">Conteúdo, roteiro e condução construídos a partir do desafio real do negócio. Palestra-assinatura: &ldquo;Você abriu uma empresa ou uma prisão?&rdquo;</p>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:48px;padding:32px;background:rgba(201,166,85,.12);border-radius:16px;border:1px solid rgba(201,166,85,.3)">
+      <h3 style="font-family:var(--font-heading);font-weight:700;font-size:1.3rem;margin-bottom:8px;color:var(--color-white)">Equipe forte se constrói por dentro. Do dono ao time.</h3>
+      <p style="color:rgba(255,255,255,.8);margin-bottom:20px;max-width:600px;margin-left:auto;margin-right:auto">Conte para a equipe IFC o desafio da sua empresa. Em até 48h úteis devolvemos uma proposta sob medida.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a href="https://wa.me/message/6XCIYAQHJXSGP1?text=Quero%20uma%20proposta%20In%20Company" target="_blank" rel="noopener" class="ifc-btn ifc-btn--gold">Solicitar proposta corporativa</a>
+        <a href="#contato" class="ifc-btn ifc-btn--outline">Falar com a equipe IFC</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESULTADOS / STATS ========== -->
+<section class="ifc-section" id="resultados">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Resultados em números</span>
+      <h2 class="ifc-heading ifc-heading--lg">Resultado que <span style="color:var(--color-primary)">aparece no negócio.</span></h2>
+      <p class="ifc-text ifc-text--center" style="margin-top:8px">Transformação que permanece.</p>
+    </div>
+
+    <div class="ifc-stats__grid">
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number">59</div>
+        <div class="ifc-stat__label">Empresários mentorados individualmente</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number">+2.000</div>
+        <div class="ifc-stat__label">Pessoas impactadas</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number">10</div>
+        <div class="ifc-stat__label">Projetos In Company realizados</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+      <div class="ifc-stat">
+        <div class="ifc-stat__number">+10M</div>
+        <div class="ifc-stat__label">De receita combinada entre os mentorados</div>
+        <div class="ifc-stat__divider"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== DEPOIMENTOS ========== -->
+<section class="ifc-section ifc-section--light" id="depoimentos">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Quem já viveu, recomenda</span>
+      <h2 class="ifc-heading ifc-heading--lg">A transformação na voz de quem entrou de um jeito e saiu diferente.</h2>
+    </div>
+
+    <div class="ifc-testimonials__grid">
+
+      <div class="ifc-testimonial">
+        <div class="ifc-testimonial__quote">&ldquo;</div>
+        <p class="ifc-testimonial__text">Entrei achando que era mais um evento de motivação e saí com a cabeça reorganizada. Voltei pra empresa tomando decisões com uma calma que eu não tinha há anos.</p>
+        <div class="ifc-testimonial__author">
+          <img src="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a1f806d7303598210540876.png" alt="Thais Leonel" class="ifc-testimonial__avatar">
+          <div>
+            <div class="ifc-testimonial__name">Thais Leonel</div>
+            <div class="ifc-testimonial__role">Dona da Agência WSI Digital</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ifc-testimonial">
+        <div class="ifc-testimonial__quote">&ldquo;</div>
+        <p class="ifc-testimonial__text">O bloco de inteligência emocional me fez perceber o quanto eu liderava no impulso. Minha relação com a equipe mudou na semana seguinte. Vale cada minuto.</p>
+        <div class="ifc-testimonial__author">
+          <img src="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a1f806dbce897da752738f0.png" alt="Maderli Marçola" class="ifc-testimonial__avatar">
+          <div>
+            <div class="ifc-testimonial__name">Maderli Marçola</div>
+            <div class="ifc-testimonial__role">Dona da Liliantex Moda Masculina</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ifc-testimonial">
+        <div class="ifc-testimonial__quote">&ldquo;</div>
+        <p class="ifc-testimonial__text">O que mais me marcou foi reconectar trabalho com propósito. Eu tinha resultado, mas estava vazio. O Felipe conduz de um jeito profundo e prático ao mesmo tempo.</p>
+        <div class="ifc-testimonial__author">
+          <img src="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a1f806d6103bdfedd96a05b.png" alt="Adailton Silva" class="ifc-testimonial__avatar">
+          <div>
+            <div class="ifc-testimonial__name">Adailton Silva</div>
+            <div class="ifc-testimonial__role">Dono do Ebenezer Buffet</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== REDES SOCIAIS ========== -->
+<section class="ifc-section">
+  <div class="ifc-container">
+    <div class="ifc-text-center">
+      <span class="ifc-badge">Conteúdo Diário</span>
+      <h2 class="ifc-heading ifc-heading--lg">O trabalho continua quando você sai daqui.</h2>
+      <p class="ifc-text ifc-text--center" style="margin-top:12px">Siga o Felipe Castro nas redes para conteúdo diário sobre identidade, consciência emocional e o que ninguém te ensinou sobre construir resultado sem se destruir no processo.</p>
+    </div>
+
+    <div class="ifc-social__grid">
+
+      <a href="https://www.instagram.com/eusou.felipecastro/" target="_blank" rel="noopener" class="ifc-social-card">
+        <div class="ifc-social-card__icon ifc-social-card__icon--ig">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </div>
+        <div class="ifc-social-card__info">
+          <h4>@eusou.felipecastro</h4>
+          <p>Reflexões diárias, bastidores e o trabalho na prática</p>
+        </div>
+      </a>
+
+      <a href="https://www.youtube.com/@eusou.felipecastro" target="_blank" rel="noopener" class="ifc-social-card">
+        <div class="ifc-social-card__icon ifc-social-card__icon--yt">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </div>
+        <div class="ifc-social-card__info">
+          <h4>Felipe Castro &middot; YouTube</h4>
+          <p>Aulas, entrevistas e o Initium Podcast no formato vídeo</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTATO / CTA FINAL ========== -->
+<section class="ifc-section ifc-section--light" id="contato">
+  <div class="ifc-container ifc-contact__grid">
+
+    <div>
+      <span class="ifc-badge">Você chegou até aqui</span>
+      <h2 class="ifc-heading ifc-heading--lg">Você chegou até aqui porque algo ressoou.</h2>
+      <p class="ifc-text" style="margin-top:12px">Esse incômodo que você carrega, essa sensação de que tem mais, que poderia estar diferente, que algo te segura, não é fraqueza. E o sinal mais honesto que voce tem. Preencha o formulário ou chame no WhatsApp. A conversa começa aqui.</p>
+
+      <div class="ifc-contact__info">
+        <div class="ifc-contact__item">
+          <div class="ifc-contact__icon">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div class="ifc-contact__item-text">
+            <h4>WhatsApp Oficial</h4>
+            <p><a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener" style="color:var(--color-primary);font-weight:600">Falar com a equipe IFC &rarr;</a></p>
+          </div>
+        </div>
+        <div class="ifc-contact__item">
+          <div class="ifc-contact__icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div class="ifc-contact__item-text">
+            <h4>E-mail</h4>
+            <p>contato@institutofelipecastro.com.br</p>
+          </div>
+        </div>
+        <div class="ifc-contact__item">
+          <div class="ifc-contact__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div class="ifc-contact__item-text">
+            <h4>Sede</h4>
+            <p>Araraquara &middot; Sao Paulo &middot; Brasil</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ifc-contact__form">
+      <h3 style="font-size:1.15rem;white-space:nowrap">Chega de segurar quem você poderia ser.</h3>
+      <p>Deixe seu contato. A equipe do IFC retorna em até 24h úteis.</p>
+      <iframe
+        src="https://api.taticaleads.com.br/widget/form/SOYd9a7SinAWf1SmEYki"
+        style="width:100%;height:505px;border:none;border-radius:3px"
+        id="inline-SOYd9a7SinAWf1SmEYki"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Formulário Contato - IFC"
+        data-height="505"
+        data-layout-iframe-id="inline-SOYd9a7SinAWf1SmEYki"
+        data-form-id="SOYd9a7SinAWf1SmEYki"
+        title="Formulário Contato - IFC"
+      ></iframe>
+      <script src="https://api.taticaleads.com.br/js/form_embed.js"></script>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="ifc-footer">
+  <div class="ifc-container">
+    <div class="ifc-footer__grid">
+
+      <div class="ifc-footer__brand">
+        <img src="https://assets.cdn.filesafe.space/VrEgg6CoAE8kU4AthR7m/media/6a44679b0f3445329fd69749.png" alt="Instituto Felipe Castro" class="ifc-footer__logo">
+        <p>Desenvolvimento de empresários e lideranças. O negócio cresce quando o empresário cresce.</p>
+      </div>
+
+      <div class="ifc-footer__col">
+        <h4>Ecossistema</h4>
+        <ul>
+          <li><a href="#imersao">Imersão Método Initium</a></li>
+          <li><a href="#ecossistema">Mentoria Initium</a></li>
+          <li><a href="#ecossistema">Formação PNL</a></li>
+          <li><a href="#ecossistema">VLT &middot; Vendas &amp; Liderança</a></li>
+          <li><a href="#ecossistema">VCR &middot; Voicer</a></li>
+          <li><a href="#incompany">IFC In Company</a></li>
+        </ul>
+      </div>
+
+      <div class="ifc-footer__col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#sobre">Felipe Castro</a></li>
+          <li><a href="#pilares">Os 3 Pilares</a></li>
+          <li><a href="#metodologia">Método Initium</a></li>
+          <li><a href="#jornada">Jornada do Cliente</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="ifc-footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener">WhatsApp Oficial</a></li>
+          <li><a href="mailto:contato@institutofelipecastro.com.br">contato@institutofelipecastro.com.br</a></li>
+          <li>Araraquara &middot; SP &middot; Brasil</li>
+        </ul>
+        <h4 style="margin-top:20px">Redes Sociais</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/eusou.felipecastro/" target="_blank" rel="noopener">@eusou.felipecastro</a></li>
+          <li><a href="https://www.youtube.com/@eusou.felipecastro" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="ifc-footer__bottom">
+      <span>&copy; 2026 IFC | Instituto Felipe Castro. Todos os direitos reservados. Felipe Castro &middot; Araraquara-SP</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== WHATSAPP FAB ========== -->
+<a href="https://wa.me/message/6XCIYAQHJXSGP1" target="_blank" rel="noopener" class="ifc-whatsapp" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+</div><!-- /.ifc-page -->
+
+<!-- ========== SCRIPTS ========== -->
+<script>
+(function(){
+  /* Fecha menu mobile ao clicar fora */
+  var toggle=document.getElementById('ifc-menu-toggle');
+  document.addEventListener('click',function(e){
+    if(toggle.checked&&!e.target.closest('.ifc-nav')&&!e.target.closest('.ifc-hamburger')){
+      toggle.checked=false;
+    }
+  });
+
+  /* Smooth scroll para anchors */
+  document.querySelectorAll('.ifc-page a[href^="#"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      var target=document.querySelector(this.getAttribute('href'));
+      if(target){
+        e.preventDefault();
+        var offset=70;
+        var pos=target.getBoundingClientRect().top+window.pageYOffset-offset;
+        window.scrollTo({top:pos,behavior:'smooth'});
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
